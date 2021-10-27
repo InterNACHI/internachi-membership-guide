@@ -25,7 +25,7 @@ for a 2-hour trial contract.
 
 ## Resources
 
-- [Latest print version of the guide](https://s3.us-east-1.amazonaws.com/assets-east-1.nachi.org/pdf/internachi-catalog-2021-10-15.pdf)
+- [Latest print version of the guide](https://cdn-e1.nachi.org/pdf/internachi-guide-2021-10-26-001.pdf)
 - [Current work-in-progress web version of the guide](https://internachi.github.io/internachi-membership-guide/)
 
 ## This repository
