@@ -16,12 +16,16 @@ builds. Generally, that should be fine for this project.
   top: 0px
 }
 
+#guide .right-0 {
+  right: 0px
+}
+
 #guide .left-0 {
   left: 0px
 }
 
-#guide .right-0 {
-  right: 0px
+#guide .m-2 {
+  margin: 0.5rem
 }
 
 #guide .-mx-2 {
@@ -48,6 +52,10 @@ builds. Generally, that should be fine for this project.
 
 #guide .mb-1 {
   margin-bottom: 0.25rem
+}
+
+#guide .mb-4 {
+  margin-bottom: 1rem
 }
 
 #guide .block {
@@ -86,6 +94,10 @@ builds. Generally, that should be fine for this project.
   height: 3.5rem
 }
 
+#guide .h-48 {
+  height: 12rem
+}
+
 #guide .min-h-screen {
   min-height: 100vh
 }
@@ -100,6 +112,14 @@ builds. Generally, that should be fine for this project.
 
 #guide .w-14 {
   width: 3.5rem
+}
+
+#guide .w-1\/3 {
+  width: 33.333333%
+}
+
+#guide .w-6\/12 {
+  width: 50%
 }
 
 #guide .max-w-full {
@@ -156,6 +176,10 @@ builds. Generally, that should be fine for this project.
   flex-direction: column
 }
 
+#guide .flex-wrap {
+  flex-wrap: wrap
+}
+
 #guide .items-center {
   align-items: center
 }
@@ -172,6 +196,10 @@ builds. Generally, that should be fine for this project.
   justify-content: space-between
 }
 
+#guide .justify-evenly {
+  justify-content: space-evenly
+}
+
 #guide .self-start {
   align-self: flex-start
 }
@@ -180,8 +208,16 @@ builds. Generally, that should be fine for this project.
   align-self: stretch
 }
 
+#guide .overflow-hidden {
+  overflow: hidden
+}
+
 #guide .rounded-full {
   border-radius: 9999px
+}
+
+#guide .rounded-lg {
+  border-radius: 0.5rem
 }
 
 #guide .border-b {
@@ -190,6 +226,10 @@ builds. Generally, that should be fine for this project.
 
 #guide .border-t {
   border-top-width: 1px
+}
+
+#guide .border-none {
+  border-style: none
 }
 
 #guide .border-blue-900 {
@@ -217,6 +257,11 @@ builds. Generally, that should be fine for this project.
   background-color: rgba(255, 241, 186, var(--tw-bg-opacity))
 }
 
+#guide .bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(92, 145, 242, var(--tw-bg-opacity))
+}
+
 #guide .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgba(245, 246, 247, var(--tw-bg-opacity))
@@ -235,11 +280,6 @@ builds. Generally, that should be fine for this project.
 #guide .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(250, 250, 251, var(--tw-bg-opacity))
-}
-
-#guide .bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(92, 145, 242, var(--tw-bg-opacity))
 }
 
 #guide .bg-opacity-20 {
@@ -285,12 +325,21 @@ builds. Generally, that should be fine for this project.
   padding-bottom: 1rem
 }
 
+#guide .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
 #guide .pt-14 {
   padding-top: 3.5rem
 }
 
 #guide .text-center {
   text-align: center
+}
+
+#guide .align-middle {
+  vertical-align: middle
 }
 
 #guide .font-serif {
@@ -363,13 +412,46 @@ builds. Generally, that should be fine for this project.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
 }
 
+#guide .shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+#guide .shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
 #guide .shadow-inner {
   --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
 }
 
+#guide .transition {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
 #guide .delay-1000 {
   transition-delay: 1000ms
+}
+
+#guide .hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+@media (min-width: 576px) {
+  #guide .sm\:w-4\/12 {
+    width: 33.333333%
+  }
+
+  #guide .sm\:w-2\/12 {
+    width: 16.666667%
+  }
 }
 
 @media (min-width: 768px) {
